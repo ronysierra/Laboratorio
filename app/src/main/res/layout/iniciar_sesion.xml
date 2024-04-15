@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo"
+    android:backgroundTint="#2F9AFC"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="307dp"
+        android:layout_height="186dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/carter_one"
+        android:fontFeatureSettings="?android:attr/candidatesTextStyleSpans"
+        android:text="Bienvenido a tu Laboratorio Personal"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="9dp"
+        android:hint="Identificación"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Ingresar" />
+
+    <!-- Ícono de flecha en frente del botón de "Ingresar" -->
+    <ImageView
+        android:id="@+id/imageViewArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonLogin"
+        android:layout_toEndOf="@id/buttonLogin"
+        android:src="@drawable/arrow_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_alignLeft="@id/imageViewArrow"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hapticFeedbackEnabled="false"
+        android:src="@drawable/logo"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible" />
+
+</RelativeLayout>
